@@ -1,0 +1,149 @@
+aside {
+  margin: 5vh 0 5vh 30vh;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1%;
+}
+#start {
+  padding-bottom: 3%;
+  margin-bottom: 5%;
+}
+h3 {
+  font-weight: 100;
+  line-height: 1px;
+  font-size: 300%;
+  color: #00a8aa;
+}
+h2 {
+  font-family: "Poppins";
+  font-weight: 900;
+  line-height: 1px;
+  font-size: 650%;
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+.imgLinks {
+  border: 3px solid #00a8aa;
+  border-radius: 20px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.imgLinks a {
+  padding: 3%;
+}
+.imgLinks img {
+  height: 40px;
+}
+.sideImg {
+  height: 125%;
+}
+.paragraphs {
+  color: #2e8182;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paragraphs h1 {
+  font-family: "Poppins";
+  font-weight: 900;
+  font-size: 40px;
+}
+.paragraphs section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+}
+#pStart {
+  margin-top: 100px;
+  padding-top: 200px;
+}
+.paragraphs p {
+  line-height: 100%;
+  max-width: 1080px;
+  min-width: 800px;
+  font-size: 200%;
+  font-family: "Poppins";
+  font-weight: lighter;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.skills img {
+  height: 75px;
+  padding: 15px;
+}
+
+.skills:nth-child(2) {
+  transition-delay: 200ms;
+}
+.skills:nth-child(3) {
+  transition-delay: 400ms;
+}
+.skills:nth-child(4) {
+  transition-delay: 600ms;
+}
+.skills:nth-child(5) {
+  transition-delay: 800ms;
+}
+.skills:nth-child(6) {
+  transition-delay: 1000ms;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+@media (max-width: 1400px) {
+  .sideImg {
+    height: 90%;
+  }
+  h3 {
+    font-weight: 100;
+    line-height: 1px;
+    font-size: 200%;
+    color: #00a8aa;
+  }
+  h2 {
+    font-family: "Poppins";
+    font-weight: 900;
+    line-height: 1px;
+    font-size: 450%;
+  }
+  #start {
+    padding-bottom: 1%;
+    margin-bottom: 1%;
+  }
+}
+@media (orientation= portrait) {
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 15px;
+  }
+  article {
+    width: 50%;
+    height: 50%;
+  }
+}
