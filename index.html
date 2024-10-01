@@ -45,7 +45,7 @@
       <ul>
         <a class="now" href="./index.html"><li>Home</li></a>
         <a href="#pStart"><li>About me</li></a>
-        <a href="./github.html"><li>My Projects on Git</li></a>
+        <a href="#Skills"><li>Skills</li></a>
       </ul>
     </header>
     <main>
@@ -57,21 +57,30 @@
           <div class="imgLinks">
             <a href="https://github.com/AllMaciente" target="_blank"
               ><img
-                src="assets/imgs/portifolio_Github.svg"
+                src="./assets/imgs/portifolio_Github.svg"
                 alt="Github logo"
                 width="50"
                 height="50"
             /></a>
-            <a href="#" target="_blank"
+            <a href="#"
               ><img
-                src="assets/imgs/portifolio_Curiculo.svg"
+                src="./assets/imgs/portifolio_Curiculo.svg"
                 alt="Github logo"
                 width="50"
                 height="50"
             /></a>
-            <a href="#" target="_blank"
+            <a
+              href="https://br.linkedin.com/in/allan-m-0734162a9"
+              target="_blank"
               ><img
-                src="assets/imgs/portifolio_Empty.svg"
+                src="./assets/imgs/portifolio_linkedin.svg"
+                alt="Github logo"
+                width="50"
+                height="50"
+            /></a>
+            <a onclick="copyEmail()"
+              ><img
+                src="./assets/imgs/portifolio_email.svg"
                 alt="Github logo"
                 width="50"
                 height="50"
@@ -88,70 +97,96 @@
             <div>
               <h1>About me</h1>
               <p>
-                Olá! Sou Allan, um entusiasta da tecnologia com paixão pela
-                programação e desenvolvimento de software. Estou atualmente
-                imerso no Programa Jovem Programador no Senac, onde tenho a
-                oportunidade de aprofundar meu conhecimento no vasto mundo da
-                programação e acompanhar as últimas tendências em tecnologia.
+                Olá! Sou <strong>Allan Maciente</strong>, um entusiasta da
+                tecnologia apaixonado por programação e desenvolvimento de
+                software. Atualmente, estou cursando o ensino médio, com término
+                previsto para 2024, enquanto mergulho profundamente no Programa
+                Jovem Programador no Senac. Essa experiência me permite explorar
+                o fascinante mundo da programação e estar sempre atualizado com
+                as últimas inovações tecnológicas.
+              </p>
+              <p>
+                Nos momentos de lazer, gosto de assistir a partidas de basquete
+                e, de vez em quando, brincar de fazer algumas cestas. Além
+                disso, sou um grande fã de rock, o que traz energia e
+                criatividade ao meu dia a dia, equilibrando meus estudos e
+                projetos de desenvolvimento.
               </p>
             </div>
           </section>
-          <section class="hidden">
+          <section id="Skills" class="hidden">
             <div>
               <h1>Skills I'm learning</h1>
               <div class="skills">
-                <!-- <img class="skills hidden" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg" alt="cplusplus logo"  /> -->
-                <img
-                  class="skills hidden"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg"
-                  alt="csharp logo"
-                />
-                <!-- <img class="skills hidden" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="fastapi logo"  /> -->
-                <img
-                  class="skills hidden"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                  alt="github logo"
-                />
-                <img
-                  class="skills hidden"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg"
-                  alt="git logo"
-                />
-                <!-- <img class="skills hidden" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="html5 logo"  /> -->
-                <!-- <img class="skills hidden" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript logo"  /> -->
-                <img
-                  class="skills hidden"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                  alt="mysql logo"
-                />
-                <!-- <img class="skills hidden" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" alt="nodejs logo"  /> -->
-                <img
-                  class="skills hidden"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg"
-                  alt="python logo"
-                />
+                <div class="skill">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg"
+                    alt="git logo"
+                  />
+                  <p>Git</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    alt="github logo"
+                  />
+                  <p>GitHub</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
+                    alt="html5 logo"
+                  />
+                  <p>HTML5</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+                    alt="css3 logo"
+                  />
+                  <p>CSS3</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="javascript logo"
+                  />
+                  <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"
+                    alt="nodejs logo"
+                  />
+                  <p>Node.js</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg"
+                    alt="python logo"
+                  />
+                  <p>Python</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    alt="react logo"
+                  />
+                  <p>React</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                    alt="express logo"
+                  />
+                  <p>Express</p>
+                </div>
               </div>
-            </div>
-          </section>
-          <section class="hidden">
-            <div>
-              <h1>Lorem Ipsum</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Aliquam etiam erat velit scelerisque in dictum non consectetur
-                a.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Aliquam etiam erat velit scelerisque in dictum non consectetur
-                a.
-              </p>
             </div>
           </section>
         </div>
       </section>
     </main>
+    <script src="./assets/js/emailCopy.js"></script>
   </body>
 </html>
