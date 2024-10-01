@@ -1,5 +1,5 @@
 aside {
-  margin: 5vh 0 5vh 30vh;
+  margin: 20vh 0 25vh 0;
 }
 section {
   display: flex;
@@ -8,8 +8,10 @@ section {
   margin-top: 1%;
 }
 #start {
-  padding-bottom: 3%;
-  margin-bottom: 5%;
+  padding: 10vh 0 10vh 0;
+  margin: 3vh 0 3vh 0;
+  justify-content: space-around;
+  align-items: center;
 }
 h3 {
   font-weight: 100;
@@ -42,8 +44,8 @@ h2 {
 .imgLinks img {
   height: 40px;
 }
-.sideImg {
-  height: 125%;
+article .sideImg {
+  height: 80vh;
 }
 .paragraphs {
   color: #2e8182;
