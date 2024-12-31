@@ -1,0 +1,62 @@
+header {
+  background-color: var(--black);
+  width: 100%;
+  /* justify-content: center; */
+}
+
+.header {
+  width: 100%;
+  height: 100vh; /* Tela inteira inicialmente */
+  /* background: linear-gradient(to bottom, #333, #666); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: height 0.5s, background 0.5s; /* Transição suave */
+  z-index: 1000;
+}
+
+.header-scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px; /* Reduzido após scroll */
+  justify-content: space-between;
+}
+
+header .title {
+  display: flex;
+  gap: 1vh;
+  padding: 2vh 3vh;
+  line-height: 1;
+  transition: opacity 0.5s;
+}
+header .title-scrolled {
+  flex-direction: column;
+  gap: 0;
+  padding: 2vh 3vh;
+  line-height: 1;
+}
+
+header h3 {
+  font-size: 3vh;
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+header h3.color {
+  color: var(--cyan);
+}
+
+.hide {
+  opacity: 0; /* Desaparece quando escondido */
+  transform: translateY(-20px); /* Suave movimento para cima */
+  pointer-events: none;
+  /* visibility: hidden; */
+}
+
+.preScroll section h1 {
+  margin: 0%;
+  color: var(--cyan);
+  font-size: 15vh;
+  line-height: 1;
+}
