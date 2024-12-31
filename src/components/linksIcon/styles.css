@@ -1,0 +1,13 @@
+div.icon {
+  display: flex;
+  gap: 2vh;
+  justify-content: center;
+  align-items: center;
+  width: calc(5 * 5vh);
+  transform: translateX(0.8vw);
+}
+
+.icon img {
+  width: 5vh;
+  height: 5vh;
+}
