@@ -1,18 +1,16 @@
 header {
   background-color: var(--black);
   width: 100%;
-  /* justify-content: center; */
 }
 
 .header {
   width: 100%;
   height: 100vh; /* Tela inteira inicialmente */
-  /* background: linear-gradient(to bottom, #333, #666); */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: height 0.5s, background 0.5s; /* Transição suave */
+  transition: height 1s, background 1s; /* Transição suave */
   z-index: 1000;
 }
 
@@ -22,20 +20,26 @@ header {
   left: 0;
   height: 60px; /* Reduzido após scroll */
   justify-content: space-between;
+  transition: all 1s ease;
 }
 
 header .title {
   display: flex;
-  gap: 1vh;
   padding: 2vh 3vh;
   line-height: 1;
-  transition: opacity 0.5s;
+  transition: opacity 1s, transform 1s ease-in-out;
 }
+
+header .title-initial {
+  flex-direction: row; /* Começa com os itens lado a lado */
+  gap: 5vh;
+}
+
 header .title-scrolled {
-  flex-direction: column;
-  gap: 0;
-  padding: 2vh 3vh;
-  line-height: 1;
+  flex-direction: column; /* Itens ficam um em cima do outro */
+  gap: 1vh;
+  transform: translateY(-50px); /* Inicialmente, move o título para cima */
+  animation: moveUpAndAlign 1s ease-in-out forwards; /* Animação do movimento */
 }
 
 header h3 {
@@ -43,15 +47,9 @@ header h3 {
   color: var(--white);
   transition: all 0.3s ease-in-out;
 }
+
 header h3.color {
   color: var(--cyan);
-}
-
-.hide {
-  opacity: 0; /* Desaparece quando escondido */
-  transform: translateY(-20px); /* Suave movimento para cima */
-  pointer-events: none;
-  /* visibility: hidden; */
 }
 
 .preScroll section h1 {
@@ -59,4 +57,35 @@ header h3.color {
   color: var(--cyan);
   font-size: 15vh;
   line-height: 1;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.hide {
+  animation: fadeOutUp 1s ease-in-out forwards;
+  pointer-events: none;
+}
+
+/* Animações */
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes moveUpAndAlign {
+  0% {
+    flex-direction: row; /* Começa lado a lado */
+    gap: 5vh;
+    transform: translateY(0); /* Posição inicial */
+  }
+  100% {
+    flex-direction: column; /* Alinha verticalmente */
+    gap: 1vh;
+    transform: translateY(0); /* Fica na posição correta */
+  }
 }
