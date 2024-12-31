@@ -1,0 +1,26 @@
+section.null {
+  width: 100vw;
+  height: 30vh;
+}
+
+#homePage section.section {
+  display: flex;
+  flex-direction: column;
+  padding: 10vw 25vh;
+  gap: 2vh;
+}
+
+#homePage .section h1 {
+  font-size: 7vh;
+  margin-bottom: 5vh;
+  text-transform: capitalize;
+  color: var(--cyan);
+  border-bottom: var(--cyan) 0.5vh solid;
+}
+#homePage .section p {
+  padding: 0 2.5vh;
+  font-size: 3vh;
+  line-height: 4vh;
+  text-align: justify;
+  text-indent: 5vh;
+}
