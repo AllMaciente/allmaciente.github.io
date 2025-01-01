@@ -12,10 +12,9 @@ export default function Home() {
           Oi, eu sou o Allan! Estou sempre mergulhando em projetos e aprendendo
           coisas novas no mundo da programação. Recentemente, concluí o curso
           Jovem Programador no Senac, onde aprendi desde lógica de programação
-          até desenvolvimento web com tecnologias como React, Node.js, JWT e
-          bcrypt. Além disso, aprendi Python por conta própria, explorando
-          projetos pessoais e desafios para entender como usar essa linguagem de
-          forma prática.
+          até desenvolvimento web. Além disso, aprendi Python por conta própria,
+          explorando projetos pessoais e desafios para entender como usar essa
+          linguagem de forma prática.
         </p>
         <p>
           Quando não estou codando, gosto de assistir a partidas de basquete,
